@@ -1,0 +1,107 @@
+/*Hintergrundbild, Bild muss am gleichen Ort gespeichert werden, 
+no-repeat meint, dass das Hintergrundbild nur einmal auftaucht sonst würde es sich immer wieder widerholen um die seite auszufüllen
+attachment fixed bedeutet, dass das Bild sich im Hintrgrund fixiert, und egal welcher Browser, sich nicht bewegt
+size cower bedeutet, dass das Bild den ganzen Browser braucht*/
+body {
+    background-image: url('20210629_080545.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /*stellt ein, dass der gesamte text der sich irgendwie in einem <div> befindet die Schriftart arial hat*/
+div {
+  font-family: arial;
+}
+  /*der Header ist bei mit mein Titel und meine navigation diese heissen Container und Item
+  dieser ist auf flex gestellt und hat noch einige stylistische einstellungen z.B. padding und border-radius*/
+.header {
+  background-color:saddlebrown;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0%;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.container {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: fit-content;
+  border-radius: 10px;
+  margin: auto;
+}
+.items {
+  background-color:slategray;
+  width: 200px;
+  height: fit-content;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* stellt ein das alle Links eine schwarze Farbe haben und nicht unterstrichen sind*/
+a {
+  text-decoration: none;
+  color:black
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .header, .container, .items {
+    flex-direction: column;
+  }
+}
+/*der haupteil beinhaltet die section, den article und das aside*/
+.hauptteil {
+  background-color:skyblue;
+  display: flex;
+  opacity: 0.9;
+}
+section {
+  width: 15%;
+  float: left;
+  color: black;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+article {
+  background-color: slategrey;
+  width: 50%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+aside {
+  width: 35%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+/* unten beinhaltet den footer und die address*/
+.unten {
+  display: flex;
+}
+footer {
+  width: 80%;
+  background-color: rgb(224, 107, 24, 0.9);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+address {
+  width: 20%;
+  background-color: slategray;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
